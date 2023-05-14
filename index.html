@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Elevator</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div id="lift-a" class="lift-left">
+        <h5>Lift A</h5>
+        <span class="lift-current-floor">0</span>
+      </div>
+
+      <div class="floor-btn-cont">
+        <h4 class="floor-title">Choose the floor:</h4>
+
+        <div class="floor-buttons">
+          <button type="button" class="floor-button" onClick="chooseFloor(0)">
+            0
+          </button>
+          <button type="button" class="floor-button" onClick="chooseFloor(1)">
+            1
+          </button>
+          <button type="button" class="floor-button" onClick="chooseFloor(2)">
+            2
+          </button>
+          <button type="button" class="floor-button" onClick="chooseFloor(3)">
+            3
+          </button>
+          <button type="button" class="floor-button" onClick="chooseFloor(4)">
+            4
+          </button>
+          <button type="button" class="floor-button" onClick="chooseFloor(5)">
+            5
+          </button>
+          <button type="button" class="floor-button" onClick="chooseFloor(6)">
+            6
+          </button>
+        </div>
+        <h4 class="floor-title">Call the elevator:</h4>
+        <button type="button" class="direction-btn" onClick="callElevator()">
+          Call
+        </button>
+      </div>
+
+      <div id="lift-b" class="lift-right">
+        <h5>Lift B</h5>
+        <div class="lift">
+          <span class="lift-current-floor">6</span>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
